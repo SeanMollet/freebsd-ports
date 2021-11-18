@@ -62,7 +62,8 @@ SUB_FILES+=	pkg-deinstall pkg-install
 SUB_PATCHES=	extra-patch-src-Makefile \
 		extra-patch-src-nv-freebsd.h \
 		extra-patch-src-nvidia_dev.c \
-		extra-patch-src-nvidia_pci.c
+		extra-patch-src-nvidia_pci.c \
+		extra-patch-src-nvidia_os.c
 DOCSDIR=	${PREFIX}/share/doc/NVIDIA_GLX-1.0
 MODULESDIR=	lib/xorg/modules
 EXTENSIONSDIR?=	${MODULESDIR}/extensions/.nvidia

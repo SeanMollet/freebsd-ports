@@ -1,0 +1,18 @@
+--- src/nvidia/nvidia_os.c.orig 2019-01-28 23:36:03.483407000 +0100
++++ src/nvidia/nvidia_os.c      2019-01-28 23:37:32.796433000 +0100
+@@ -807,6 +807,7 @@
+             return;
+         }
+     }
++#if 0
+     {
+         const sc_softc_t *sc = sc_get_softc(0, SC_KERNEL_CONSOLE);
+
+@@ -833,6 +834,7 @@
+             }
+         }
+     }
++#endif
+
+     *pPhysicalAddress = 0;
+     *pFbWidth = *pFbHeight = *pFbDepth = *pFbPitch = 0;
